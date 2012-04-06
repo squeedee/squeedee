@@ -80,7 +80,7 @@ module StaticSiteMap
 
     def default
       throw "root cannot be default" if parent.nil?
-      parent.default_child= self
+      parent.default_child(self)
     end
 
     def default_child(child = nil)

@@ -1,5 +1,4 @@
-module Client
-  class AboutController < ClientController
-
+class Client::AboutController < ApplicationController
+  def index
   end
 end
